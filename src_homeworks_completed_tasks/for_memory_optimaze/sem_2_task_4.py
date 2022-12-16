@@ -12,6 +12,7 @@ def split_line_text_by_space(inputed):
         print(str(iter) + " " + word_item[0:max_characters_in_word])
         iter += 1
 
+
 if __name__ == '__main__':
     print("Input several words by space character separator")
     inputed = input()
