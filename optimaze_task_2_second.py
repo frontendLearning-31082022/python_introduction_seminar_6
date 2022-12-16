@@ -7,9 +7,9 @@ def split_line_text_by_space(inputed):
     max_characters_in_word = 10
 
     list_words = [i[0:max_characters_in_word] for i in inputed.split(" ") if
-                  len(i)>0]
+                  len(i) > 0]
 
-    for i in range(0,len(list_words)) :
+    for i in range(0, len(list_words)):
         print(f"{i} {list_words[i]}")
 
 

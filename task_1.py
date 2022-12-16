@@ -49,15 +49,17 @@ test = TestClass()
      """
     statements = ['TestClass.test_first(TestClass.count_digs)']
     print(
-        f'{statements[0]}, {min(repeat(statements[0], setup, default_timer, 3, 100))}')
-    #     результат 7.63 секунд для 10000 чисел
+        f'{statements[0]},'
+        f' {min(repeat(statements[0], setup, default_timer, 3, 100))}  dfg')
+    """результат 7.63 секунд для 10000 чисел"""
 
     """Во втором случае исользуем list comprehension 
     для генерация всего списка при этом пропускаем элементы с четной позицией
     """
     statements = ['TestClass.optimaze_first(TestClass.count_digs)']
     print(
-        f'{statements[0]}, {min(repeat(statements[0], setup, default_timer, 3, 100))}')
+        f'{statements[0]}, '
+        f'{min(repeat(statements[0], setup, default_timer, 3, 100))}')
     """результат 4.27 секунд для 10000 чисел"""
 
     """"Реализация простого алгоритма перемешивания. 
@@ -67,11 +69,13 @@ test = TestClass()
     """
     statements = ['TestClass.test_second(10000)']
     print(
-        f'{statements[0]}, {min(repeat(statements[0], setup, default_timer, 3, 100))}')
+        f'{statements[0]}, '
+        f'{min(repeat(statements[0], setup, default_timer, 3, 100))}')
     """результат 13.70 секунд для 10000 элементов"""
 
     """использование функции Python random.shuffle для данной цели"""
     statements = ['TestClass.optimaze_second(10000)']
     print(
-        f'{statements[0]}, {min(repeat(statements[0], setup, default_timer, 3, 100))}')
+        f'{statements[0]},'
+        f' {min(repeat(statements[0], setup, default_timer, 3, 100))}')
     """результат 5.27 секунд для 10000 элементов"""

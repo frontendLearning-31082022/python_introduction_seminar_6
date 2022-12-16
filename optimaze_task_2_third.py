@@ -4,14 +4,15 @@
 
 
 def find_big_number_in_digit(digit):
-    uniq_digits=set(digit)
+    uniq_digits = set(digit)
     max_num = max(uniq_digits)
 
     return max_num
 
+
 def run():
     # int_positive = int(main.input_int(True))
-    int_positive=6
+    int_positive = 6
 
-    max_num=find_big_number_in_digit(int_positive)
-    print("Max value in inputed number " + str(max_num))
+    max_num = find_big_number_in_digit(int_positive)
+    print(f"Max value in inputed number {max_num}")
